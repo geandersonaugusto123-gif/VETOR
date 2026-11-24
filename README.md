@@ -4,7 +4,7 @@ O VETOR estima a taxa de aprovação do 6º ao 9º ano em escolas de Goiás usan
 
 Projeto Integrador da disciplina de Inteligência Artificial, curso de Sistemas de Informação da Universidade Estadual de Goiás (UEG), Unidade Universitária de Trindade.
 
-[Ler o relatório final (PDF)](Relatorio_VETOR.pdf)
+[Ler o relatório final (PDF)](Projeto%20Integrador%20de%20IA%20-%20Educa%C3%A7%C3%A3o.pdf)
 
 ![Bancada do VETOR com os cinco modelos conectados à avaliação](prints/fluxo.png)
 
