@@ -1,0 +1,32 @@
+=== PAG 1 ===
+# Projeto 2 — Educação: regressão de rendimento escolar em Goiás ## Fonte INEP, Taxas de
+Rendimento Escolar por Escola, 2025; arquivo original fornecido: `tx_rend_escolas_2025.zip`,
+planilha `tx_rend_escolas_2025.xlsx`, aba `ESCOLAS`. ## Construção Filtrados registros da
+UF `GO` e mantidas apenas escolas com `1_CAT_FUN_AF` (taxa de aprovação dos anos finais
+do Ensino Fundamental) numérico. Resultaram 1.742 escolas. Valores originais `--` foram
+convertidos para campo vazio nos indicadores opcionais. Não houve imputação, normalização,
+codificação categórica nem geração de registros sintéticos. Uma linha por escola. O arquivo de
+indicadores por município não foi usado, pois agregados contemporâneos podem incorporar o
+próprio resultado das escolas e introduzir vazamento. ## Dicionário de dados | Coluna |
+Significado | Uso recomendado | |---|---|---| | ano | Ano de referência (2025) | Contexto;
+constante, não preditor | | codigo_municipio | Código IBGE do município | Identificador; não
+tratar diretamente como variável numérica | | municipio | Nome do município |
+Contexto/categoria, avaliar codificação | | codigo_escola | Código INEP da escola | Identificador;
+não tratar como número contínuo | | escola | Nome da escola | Identificador, não preditor direto |
+| localizacao | Urbana ou Rural | Atributo categórico | | dependencia_administrativa | Rede
+administrativa da escola | Atributo categórico | | aprovacao_anos_iniciais_pct | Taxa de
+aprovação nos anos iniciais do Ensino Fundamental | Atributo numérico opcional; ausente
+quando a etapa não é ofertada ou dado indisponível | | aprovacao_ensino_medio_pct | Taxa de
+aprovação do Ensino Médio | Atributo numérico opcional; ausente quando a etapa não é
+ofertada ou dado indisponível | | aprovacao_anos_finais_pct | Taxa de aprovação dos anos
+finais do Ensino Fundamental | **Variável-alvo numérica** | ## Orientações metodológicas -
+Tarefa: estimativa exploratória **contemporânea** da taxa de aprovação dos anos finais em
+2025, não previsão de ano futuro. - Há poucos preditores independentes da variável-alvo;
+desempenho preditivo pode ser modesto. Não prometer alta precisão. - O modelo deve usar
+apenas os atributos escolhidos como entradas, nunca o campo-alvo nem taxas de
+reprovação/abandono complementares do mesmo segmento. - Comparar ao menos uma
+regressão linear simples (p.ex., aprovação dos anos iniciais, somente escolas que ofertam
+ambas as etapas) e uma regressão com variáveis categóricas codificadas; informar que os
+subconjuntos podem diferir. - Reportar MAE, RMSE e R²; verificar valores previstos fora de 0 a
+100 e discutir limites da regressão linear. - Evitar interpretar associação como causalidade;
+dados transversais de 2025.

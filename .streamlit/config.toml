@@ -1,0 +1,20 @@
+[theme]
+base = "dark"
+primaryColor = "#C9CDD3"
+backgroundColor = "#111315"
+secondaryBackgroundColor = "#1D2024"
+textColor = "#F7F8FA"
+borderColor = "#343940"
+greenColor = "#27AE83"
+yellowColor = "#D9A441"
+redColor = "#D96565"
+font = "sans-serif"
+
+[browser]
+gatherUsageStats = false
+serverAddress = "127.0.0.1"
+
+[server]
+address = "127.0.0.1"
+showEmailPrompt = false
+fileWatcherType = "none"

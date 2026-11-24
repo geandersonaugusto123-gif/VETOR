@@ -1,0 +1,19 @@
+Conferência de origem do CSV — 24 de novembro de 2026
+Fonte: https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/taxas-de-rendimento-escolar (2025, Escola).
+Arquivo: tx_rend_escolas_2025.zip, planilha tx_rend_escolas_2025.xlsx, aba ESCOLAS.
+Procedimento: filtrar UF GO e taxa final (coluna L, 1_CAT_FUN_AF) numérica. Comparar, por código escolar, as colunas A, D, E, F, G, H, I, K, V e L com os dez campos do CSV. Tratar '--' como ausência. Para as taxas, usar a precisão publicada de uma casa decimal.
+
+MD5 XLSX 39664e3669ca750511037d5d546c88fe
+SHA256 CSV 39e5921d7610f4378ee054352facdfb3ffa461dac3883032881e92c7d279114f
+Linhas nacionais reconhecidas: 126684 Goiás: 3449 recorte com alvo: 1742
+Linhas fornecidas: 1742 campos: 10
+Códigos no oficial ausentes na atividade: 0
+Códigos na atividade ausentes no oficial: 0
+Diferenças de campos por código: 8 Counter({'aprovacao_anos_finais_pct': 7, 'aprovacao_anos_iniciais_pct': 1})
+Exemplos de diferenças: [(Decimal('52012824'), 'aprovacao_anos_finais_pct', Decimal('80.6'), Decimal('80.599999999999994')), (Decimal('52046311'), 'aprovacao_anos_iniciais_pct', Decimal('76.9'), Decimal('76.900000000000006')), (Decimal('52090850'), 'aprovacao_anos_finais_pct', Decimal('81.4'), Decimal('81.400000000000006')), (Decimal('52088936'), 'aprovacao_anos_finais_pct', Decimal('77.4'), Decimal('77.400000000000006')), (Decimal('52075427'), 'aprovacao_anos_finais_pct', Decimal('72.9'), Decimal('72.900000000000006')), (Decimal('52085910'), 'aprovacao_anos_finais_pct', Decimal('81.6'), Decimal('81.599999999999994')), (Decimal('52047644'), 'aprovacao_anos_finais_pct', Decimal('68.6'), Decimal('68.599999999999994')), (Decimal('52070638'), 'aprovacao_anos_finais_pct', Decimal('81.9'), Decimal('81.900000000000006'))]
+Mesma ordem de registros: True
+Códigos e dez campos validados na precisão oficial de uma casa decimal.
+
+Campos comparados: ano (A), código do município (D), município (E), código da escola (F), escola (G), localização (H), dependência administrativa (I), aprovação nos anos iniciais (K), aprovação no Ensino Médio (V) e aprovação nos anos finais (L). Os códigos foram comparados nos dois sentidos. O símbolo -- e as células vazias foram lidos como ausência.
+Conclusão: 17.420 campos comparados. Oito diferenças na representação interna das taxas foram de até 0,000000000000006 p.p. Após aplicar uma casa decimal, foram 0 divergências.
+SHA-256 do ZIP oficial: 483335234fed7d3f1880d00eefb1f0e1d23ffc3807c1c7f6caf9795db63e0b92
